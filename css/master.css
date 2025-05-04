@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #2A7B9B;
+    background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.location-label {
+    display: block;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+#locationSelector {
+    height: 50px;
+    width: 250px;
+    text-align: center;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    margin: 20px 0;
+    background-color: #f1f1f1;
+    color: #333;
+    border: none;
+    padding: 10px;
+}
+#locationSelector:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+#weather {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1400px; /* was 1000px */
+    width: 100%;
+    margin: auto;
+}
+
+.weather-day {
+    background: #5ca8f5;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.weather-day:hover {
+    transform: scale(1.05);
+  }
+
+.weather-day h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: #484541;
+}
+
+.weather-day img {
+  width: 100px;
+  height: 100px;
+  margin: 0.5rem 0;
+}
+
+.weather-day .temp {
+    margin: 0.25rem 0;
+    font-size: 0.95rem;
+    color: #525151;
+}
+.weather-desc {
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+.copyright-text {
+    color: #bbb;
+    font-size: 0.8rem;
+}
